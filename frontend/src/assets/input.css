@@ -1,0 +1,57 @@
+@import "tailwindcss";
+
+.formContainer {
+    @apply bg-gray-900 text-gray-200 p-5 min-w-100 border-1 border-gray-700 max-h-200 
+            h-auto overflow-hidden;
+}
+
+.form-heading {
+    @apply text-2xl font-bold mb-5;
+}
+
+.form-label {
+    @apply text-sm;
+}
+
+.form-input {
+    @apply rounded-sm border-1 border-gray-700 bg-gray-800 mt-1 mb-3 py-2 px-3 w-full cursor-text;
+}
+
+.form-submit-button {
+    @apply bg-none border-red-600 border-2 hover:bg-red-600 text-red-600 hover:text-gray-200 text-[16px] font-bold w-full py-3 mt-2 rounded-sm
+    transition-all ease-in-out duration-300;
+}
+
+.error-message {
+    @apply border-l-4 py-3 px-3 border-red-600 bg-red-600/50 text-gray-200 mb-2 w-full;
+}
+
+.success-message {
+    @apply border-l-4 py-3 px-3 border-lime-600 bg-lime-600/50 text-gray-200 mb-2 w-full;
+}
+
+.logout-button {
+    @apply border-2 border-purple-600 hover:border-purple-700 rounded-sm hover:bg-purple-800 transition-all ease-in-out duration-300 py-3 px-10 mt-3 cursor-pointer;
+}
+
+.open-button {
+    @apply w-full hover:bg-gray-800 hover:border-gray-700 font-bold rounded-sm py-3 transition-all ease-in-out duration-300;
+}
+
+.task-card {
+    @apply py-5 px-10 bg-gray-800 w-full rounded-sm border-1 border-gray-700 hover:bg-gray-700 hover:border-gray-600
+            transition-all ease-in-out duration-300 grid grid-cols-1;
+}
+
+.delete-button {
+    @apply bg-red-600 py-2 max-w-40 rounded-sm px-10 cursor-pointer;
+}
+
+.create-button {
+    @apply border-2 border-lime-500 hover:bg-lime-500 py-2 w-full rounded-sm px-10 cursor-pointer
+            transition-all ease-in-out duration-300 mb-5;
+}
+
+.card-button {
+    @apply w-full cursor-pointer py-2 border-1 border-gray-600 transition-all ease-in-out duration-300;
+}
