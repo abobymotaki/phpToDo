@@ -1,0 +1,6 @@
+[
+    {
+        "src": "*.php",
+        "use": "@vercel/php"
+    }
+]

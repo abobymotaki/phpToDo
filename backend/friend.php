@@ -13,11 +13,11 @@ if (isset($_POST['search'])) {
 
         $result = $sql->get_result();
         
-        echo '<div class="grid grid-cols-3 gap-4">';
+        echo '<div class="grid grid-cols-3 gap-4 py-5">';
         if ($result->num_rows > 0) {
             while ($row = $result->fetch_assoc()) {
                 $username = $row['username'];
-                echo '<div class="task-card">';
+                echo '<div class="task-card" onclick="window.location.href=\'../../../backend/addFriend.php?receiverID=' . $row['id'] . '\'">';
                 echo $username;
                 echo '</div>';
             }
